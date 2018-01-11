@@ -3,10 +3,9 @@ package fr.insa;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 
-import org.neo4j.graphalgo.GraphAlgoFactory;
-import org.neo4j.graphalgo.PathFinder;
-import org.neo4j.graphalgo.WeightedPath;
+import org.neo4j.graphalgo.*;
 import org.neo4j.graphdb.*;
 import org.neo4j.graphdb.Label;
 
@@ -34,69 +33,100 @@ public class App
     public static void main( final String[] args ) throws IOException
     {
         App app = new App();
-//        app.createDb();
+        app.createDb(0.0005);
 
-//        find the shortest path with dijkstra
-        Point start = new Point(0,0);
-        Point end = new Point(49,49);
-        WeightedPath path = app.dijkstra(start,end);
+        Point start = new Point(250,3);
+        Point end = new Point(500,255);
 
+//      find the shortest path with dijkstra
+//        WeightedPath path = app.dijkstra(start,end);
+//        app.displayNodes(path);
 
         app.shutDown();
     }
 
     public App() throws IOException{
 //        if we want create a new graph
-//        FileUtils.deleteRecursively( databaseDirectory );
+        FileUtils.deleteRecursively( databaseDirectory );
 
-        graphDb = new GraphDatabaseFactory().newEmbeddedDatabase( databaseDirectory );
+        graphDb = new GraphDatabaseFactory().newEmbeddedDatabaseBuilder(databaseDirectory)
+                .setConfig(GraphDatabaseSettings.pagecache_memory, "20G").newGraphDatabase();
         registerShutdownHook( graphDb );
     }
 
-    void createDb(){
+    void createDb(Double eps){
 
         try( Transaction tx = graphDb.beginTx() )
         {
 //          create nodes
-            for(int x=0;x<50;x++){
+            for(int x=0;x<180;x++){
                 nodes.add(new ArrayList<Node>());
-                for(int y=0;y<50;y++){
-                    Node node = graphDb.createNode();
-                    node.setProperty("id",x+":"+y);
-                    node.setProperty("x",x);
-                    node.setProperty("y",y);
-                    node.addLabel( Point );
-                    nodes.get(x).add(node);
+                for(int y=0;y<90;y++){
+                    try{
+                        if(data.get(x).get(y)>eps){
+                            Node node = graphDb.createNode();
+                            node.setProperty("id",x+":"+y);
+                            node.setProperty("x",x);
+                            node.setProperty("y",y);
+                            node.addLabel( Point );
+                            nodes.get(x).add(node);
+                        }
+                    }
+                    catch (Exception ex){
+                        System.out.println(ex);
+                        continue;
+                    }
                 }
             }
 //          create edges
-            for(int x=0;x<50;x++){
-                for(int y=0;y<50;y++){
+            for(int x=0;x<180;x++){
+                for(int y=0;y<90;y++){
                     Relationship relationship;
                     try{
+                        System.out.println(x+" "+y);
+
                         //2 points in the same line
-                        relationship = (nodes.get(x).get(y)).createRelationshipTo((nodes.get(x).get(y+1)),RelTypes.NEAR);
-                        relationship.setProperty("probability",1-data.get(x).get(y+1));
-                        relationship = (nodes.get(x).get(y+1)).createRelationshipTo((nodes.get(x).get(y)),RelTypes.NEAR);
-                        relationship.setProperty("probability",1-data.get(x).get(y));
+                        if(data.get(x).get(y+1)>eps){
+                            relationship = (nodes.get(x).get(y)).createRelationshipTo((nodes.get(x).get(y+1)),RelTypes.NEAR);
+                            relationship.setProperty("probability",1-data.get(x).get(y+1));
+                        }
+                        if(data.get(x).get(y)>eps){
+                            relationship = (nodes.get(x).get(y+1)).createRelationshipTo((nodes.get(x).get(y)),RelTypes.NEAR);
+                            relationship.setProperty("probability",1-data.get(x).get(y));
+                        }
+
 
                         //2 points in the same column
-                        relationship = (nodes.get(x).get(y)).createRelationshipTo((nodes.get(x+1).get(y)),RelTypes.NEAR);
-                        relationship.setProperty("probability",1-data.get(x+1).get(y));
-                        relationship = (nodes.get(x+1).get(y)).createRelationshipTo((nodes.get(x).get(y)),RelTypes.NEAR);
-                        relationship.setProperty("probability",1-data.get(x).get(y));
+                        if(data.get(x+1).get(y)>eps){
+                            relationship = (nodes.get(x).get(y)).createRelationshipTo((nodes.get(x+1).get(y)),RelTypes.NEAR);
+                            relationship.setProperty("probability",1-data.get(x+1).get(y));
+                        }
+                        if(data.get(x).get(y)>eps){
+                            relationship = (nodes.get(x+1).get(y)).createRelationshipTo((nodes.get(x).get(y)),RelTypes.NEAR);
+                            relationship.setProperty("probability",1-data.get(x).get(y));
+                        }
 
                         //2 points in the same diagonal
-                        relationship = (nodes.get(x).get(y)).createRelationshipTo((nodes.get(x+1).get(y+1)),RelTypes.NEAR);
-                        relationship.setProperty("probability",1-data.get(x+1).get(y+1));
-                        relationship = (nodes.get(x+1).get(y+1)).createRelationshipTo((nodes.get(x).get(y)),RelTypes.NEAR);
-                        relationship.setProperty("probability",1-data.get(x).get(y));
+                        if(data.get(x+1).get(y+1)>eps){
+                            relationship = (nodes.get(x).get(y)).createRelationshipTo((nodes.get(x+1).get(y+1)),RelTypes.NEAR);
+                            relationship.setProperty("probability",1-data.get(x+1).get(y+1));
+                        }
+                        if(data.get(x).get(y)>eps){
+                            relationship = (nodes.get(x+1).get(y+1)).createRelationshipTo((nodes.get(x).get(y)),RelTypes.NEAR);
+                            relationship.setProperty("probability",1-data.get(x).get(y));
+                        }
+
 
                         //2 points in the same anti-diagonal
-                        relationship = (nodes.get(x).get(y)).createRelationshipTo((nodes.get(x-1).get(y+1)),RelTypes.NEAR);
-                        relationship.setProperty("probability",1-data.get(x-1).get(y+1));
-                        relationship = (nodes.get(x-1).get(y+1)).createRelationshipTo((nodes.get(x).get(y)),RelTypes.NEAR);
-                        relationship.setProperty("probability",1-data.get(x).get(y));
+                        if(data.get(x-1).get(y+1)>eps){
+                            relationship = (nodes.get(x).get(y)).createRelationshipTo((nodes.get(x-1).get(y+1)),RelTypes.NEAR);
+                            relationship.setProperty("probability",1-data.get(x-1).get(y+1));
+                        }
+                        if(data.get(x).get(y)>eps){
+                            relationship = (nodes.get(x-1).get(y+1)).createRelationshipTo((nodes.get(x).get(y)),RelTypes.NEAR);
+                            relationship.setProperty("probability",1-data.get(x).get(y));
+                        }
+
                     }
                     catch (Exception ex){
                         System.out.println(ex);
@@ -142,24 +172,17 @@ public class App
         return path;
     }
 
-//    void removeData()
-//    {
-//        try
-//        {
-//            Transaction tx = graphDb.beginTx();
-//            // START SNIPPET: removingData
-//            // let's remove the data
-//            firstNode.getSingleRelationship( RelTypes.KNOWS, Direction.OUTGOING ).delete();
-//            firstNode.delete();
-//            secondNode.delete();
-//            // END SNIPPET: removingData
-//
-//            tx.success();
-//        }
-//        catch (Exception ex){
-//
-//        }
-//    }
+    public void displayNodes(WeightedPath path){
+        Iterable<Node> nodes = path.nodes();
+
+        try (Transaction tx = graphDb.beginTx()) {
+            for (Node node: nodes) {
+                System.out.println(node.getProperty("x")+":"+node.getProperty("y"));
+            }
+
+            tx.success();
+        }
+    }
 
     void shutDown()
     {
