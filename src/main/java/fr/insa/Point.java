@@ -1,29 +1,28 @@
 package fr.insa;
 
 public class Point {
-    private int x;
-    private int y;
+    private double lat;
+    private double lon;
 
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
+    public double getLat() {
+        return lat;
     }
 
-    public int getY() {
-        return y;
+    public void setLat(double lat) {
+        this.lat = lat;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public double getLon() {
+        return lon;
     }
 
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public void setLon(double lon) {
+        this.lon = lon;
     }
-    public Point() {
+
+    public Point(double lat, double lon) {
+        this.lat = lat;
+        this.lon = lon;
     }
+
 }

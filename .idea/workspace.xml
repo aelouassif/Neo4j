@@ -7,31 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4da8ed2-c31e-4c98-9557-051ab2974966" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fr/insa/App$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/fr/insa/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/density-map-from-20160101-to-20161231-5-probability.csv" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.counts.db.b" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.labelscanstore.db" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.labelscanstore.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.nodestore.db" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.nodestore.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.nodestore.db.id" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.nodestore.db.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.id" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.index" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.index.id" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.index.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.index.keys" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.index.keys" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.index.keys.id" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.propertystore.db.index.keys.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshipstore.db" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshipstore.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshipstore.db.id" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshipstore.db.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshiptypestore.db" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshiptypestore.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshiptypestore.db.id" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshiptypestore.db.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshiptypestore.db.names" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshiptypestore.db.names" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshiptypestore.db.names.id" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.relationshiptypestore.db.names.id" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/neostore.transaction.db.0" afterPath="$PROJECT_DIR$/target/neo4j-db/neostore.transaction.db.0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/insa/App.java" afterPath="$PROJECT_DIR$/src/main/java/fr/insa/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/insa/CSVReader.java" afterPath="$PROJECT_DIR$/src/main/java/fr/insa/CSVReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/neo4j-db/logs/debug.log" afterPath="$PROJECT_DIR$/target/neo4j-db/logs/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/fr/insa/Point.java" afterPath="$PROJECT_DIR$/src/main/java/fr/insa/Point.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +35,7 @@
       <file leaf-file-name="HelloWorldExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/HelloWorldExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="18">
               <caret line="17" column="7" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="54" selection-end-column="3" />
               <folding />
             </state>
@@ -66,9 +45,18 @@
       <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="468">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#141#142#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,7 +64,7 @@
       <file leaf-file-name="SmallExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/SmallExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="846">
               <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="58" />
               <folding />
             </state>
@@ -86,13 +74,18 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2279">
-              <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="30" />
+            <state relative-caret-position="2988">
+              <caret line="168" column="5" lean-forward="true" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#RelTypes#0;class#App#0" expanded="false" />
-                <element signature="e#7742#7890#0" expanded="true" />
-                <element signature="e#7889#7890#0" expanded="true" />
+                <element signature="method#displayNodes#0;class#App#0" expanded="false" />
+                <element signature="e#7788#7936#0" expanded="true" />
+                <element signature="e#7935#7936#0" expanded="true" />
+                <element signature="e#7991#7992#0" expanded="true" />
+                <element signature="e#8037#8038#0" expanded="true" />
+                <element signature="e#8084#8085#0" expanded="true" />
+                <element signature="e#8129#8130#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +94,7 @@
       <file leaf-file-name="Long.java" pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Long.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14526">
+            <state relative-caret-position="18">
               <caret line="839" column="0" lean-forward="false" selection-start-line="839" selection-start-column="0" selection-end-line="839" selection-end-column="0" />
               <folding />
             </state>
@@ -136,7 +129,7 @@
       <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11124">
+            <state relative-caret-position="18">
               <caret line="656" column="0" lean-forward="false" selection-start-line="656" selection-start-column="0" selection-end-line="656" selection-end-column="0" />
               <folding />
             </state>
@@ -146,7 +139,7 @@
       <file leaf-file-name="EmbeddedNeo4j.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/EmbeddedNeo4j.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
+            <state relative-caret-position="527">
               <caret line="63" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding />
             </state>
@@ -189,11 +182,11 @@
         <option value="$PROJECT_DIR$/src/test/java/fr/insa/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insa/PathFindingDocTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insa/SmallExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/insa/Point.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insa/EmbeddedNeo4j.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insa/HelloWorldExample.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insa/CSVReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insa/Point.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insa/App.java" />
       </list>
     </option>
@@ -233,6 +226,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,10 +270,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,12 +523,13 @@
       <workItem from="1515609494690" duration="604000" />
       <workItem from="1515658208596" duration="10308000" />
       <workItem from="1515709254779" duration="2301000" />
-      <workItem from="1515866307575" duration="2275000" />
+      <workItem from="1515866307575" duration="5244000" />
+      <workItem from="1515961647361" duration="2426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94733000" />
+    <option name="totallyTimeSpent" value="100128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -557,19 +551,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31648353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33406594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33516484" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21367522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21634616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -623,8 +617,13 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#RelTypes#0;class#App#0" expanded="false" />
-            <element signature="e#7742#7890#0" expanded="true" />
-            <element signature="e#7889#7890#0" expanded="true" />
+            <element signature="method#displayNodes#0;class#App#0" expanded="false" />
+            <element signature="e#7788#7936#0" expanded="true" />
+            <element signature="e#7935#7936#0" expanded="true" />
+            <element signature="e#7991#7992#0" expanded="true" />
+            <element signature="e#8037#8038#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8129#8130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,7 +682,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -727,8 +735,13 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#RelTypes#0;class#App#0" expanded="false" />
-            <element signature="e#7742#7890#0" expanded="true" />
-            <element signature="e#7889#7890#0" expanded="true" />
+            <element signature="method#displayNodes#0;class#App#0" expanded="false" />
+            <element signature="e#7788#7936#0" expanded="true" />
+            <element signature="e#7935#7936#0" expanded="true" />
+            <element signature="e#7991#7992#0" expanded="true" />
+            <element signature="e#8037#8038#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8129#8130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,8 +777,13 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#RelTypes#0;class#App#0" expanded="false" />
-            <element signature="e#7742#7890#0" expanded="true" />
-            <element signature="e#7889#7890#0" expanded="true" />
+            <element signature="method#displayNodes#0;class#App#0" expanded="false" />
+            <element signature="e#7788#7936#0" expanded="true" />
+            <element signature="e#7935#7936#0" expanded="true" />
+            <element signature="e#7991#7992#0" expanded="true" />
+            <element signature="e#8037#8038#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8129#8130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -853,8 +871,13 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#RelTypes#0;class#App#0" expanded="false" />
-            <element signature="e#7742#7890#0" expanded="true" />
-            <element signature="e#7889#7890#0" expanded="true" />
+            <element signature="method#displayNodes#0;class#App#0" expanded="false" />
+            <element signature="e#7788#7936#0" expanded="true" />
+            <element signature="e#7935#7936#0" expanded="true" />
+            <element signature="e#7991#7992#0" expanded="true" />
+            <element signature="e#8037#8038#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8129#8130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -881,8 +904,13 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#RelTypes#0;class#App#0" expanded="false" />
-            <element signature="e#7742#7890#0" expanded="true" />
-            <element signature="e#7889#7890#0" expanded="true" />
+            <element signature="method#displayNodes#0;class#App#0" expanded="false" />
+            <element signature="e#7788#7936#0" expanded="true" />
+            <element signature="e#7935#7936#0" expanded="true" />
+            <element signature="e#7991#7992#0" expanded="true" />
+            <element signature="e#8037#8038#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8129#8130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,8 +946,13 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#RelTypes#0;class#App#0" expanded="false" />
-            <element signature="e#7742#7890#0" expanded="true" />
-            <element signature="e#7889#7890#0" expanded="true" />
+            <element signature="method#displayNodes#0;class#App#0" expanded="false" />
+            <element signature="e#7788#7936#0" expanded="true" />
+            <element signature="e#7935#7936#0" expanded="true" />
+            <element signature="e#7991#7992#0" expanded="true" />
+            <element signature="e#8037#8038#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8129#8130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -933,10 +966,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/SmallExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/HelloWorldExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="54" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/EmbeddedNeo4j.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11124">
+        <state relative-caret-position="18">
           <caret line="656" column="0" lean-forward="false" selection-start-line="656" selection-start-column="0" selection-end-line="656" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/CSVReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="38" column="74" lean-forward="false" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="839" column="0" lean-forward="false" selection-start-line="839" selection-start-column="0" selection-end-line="839" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -952,73 +1035,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/EmbeddedNeo4j.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/HelloWorldExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="54" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14526">
-          <caret line="839" column="0" lean-forward="false" selection-start-line="839" selection-start-column="0" selection-end-line="839" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/SmallExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="47" column="58" lean-forward="false" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/CSVReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="74" lean-forward="false" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="74" />
+        <state relative-caret-position="468">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insa/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2279">
-          <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="30" />
+        <state relative-caret-position="2988">
+          <caret line="168" column="5" lean-forward="true" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#RelTypes#0;class#App#0" expanded="false" />
-            <element signature="e#7742#7890#0" expanded="true" />
-            <element signature="e#7889#7890#0" expanded="true" />
+            <element signature="method#displayNodes#0;class#App#0" expanded="false" />
+            <element signature="e#7788#7936#0" expanded="true" />
+            <element signature="e#7935#7936#0" expanded="true" />
+            <element signature="e#7991#7992#0" expanded="true" />
+            <element signature="e#8037#8038#0" expanded="true" />
+            <element signature="e#8084#8085#0" expanded="true" />
+            <element signature="e#8129#8130#0" expanded="true" />
           </folding>
         </state>
       </provider>

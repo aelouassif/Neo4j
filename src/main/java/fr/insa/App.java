@@ -16,7 +16,7 @@ import org.neo4j.graphdb.DynamicLabel;
 
 public class App
 {
-    private int line = 900,col = 1800 ;
+    private int line = 900,col = 1800 ,pas = 5 ;
     private String csvFile = "data/probability-5.csv";
     private static final File databaseDirectory = new File( "target/neo4j-db" );
     // our data
@@ -34,9 +34,8 @@ public class App
     public static void main( final String[] args ) throws IOException{
         App app = new App();
         app.createDb(0.05);
-
-//        Point start = new Point(250,3);
-//        Point end = new Point(500,255);
+        Point start = new Point(35,-6);
+        Point end = new Point(-34,18);
 
 //      find the shortest path with dijkstra
 //        WeightedPath path = app.dijkstra(start,end);
@@ -62,8 +61,8 @@ public class App
                         if(data[y][x]>eps){
                             Node node = graphDb.createNode();
                             node.setProperty("ID",x+":"+y);
-                            node.setProperty("x",x);
-                            node.setProperty("y",y);
+                            node.setProperty("x",xtolatitude(x,pas));
+                            node.setProperty("y",ytolongitude(y,pas));
                             node.addLabel( Point );
                             nodes[y][x] = node;
                         }
@@ -158,8 +157,8 @@ public class App
             PathFinder<WeightedPath> finder = GraphAlgoFactory.dijkstra(
                     PathExpanders.forTypeAndDirection( RelTypes.NEAR, Direction.BOTH ), "probability" );
 
-            Node startNode = graphDb.findNode(Point,"id",start.getX()+":"+start.getY());
-            Node endNode = graphDb.findNode(Point,"id",end.getX()+":"+end.getY());
+            Node startNode = graphDb.findNode(Point,"id",start.getLat()+":"+start.getLon());
+            Node endNode = graphDb.findNode(Point,"id",end.getLat()+":"+end.getLon());
             path = finder.findSinglePath(startNode,endNode );
 
             // Get the weight for the found path
@@ -206,5 +205,10 @@ public class App
         } );
     }
 
-
+    public double xtolatitude(int x,int pas){
+        return (((double)x)/pas)-180.0;
+    }
+    public double ytolongitude(int y,int pas){
+        return (((double)y)/pas)-90.0;
+    }
 }
